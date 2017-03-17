@@ -3,16 +3,13 @@ var urlStr = "";
 
 $(document).ready(function(){
     function req(request){
-        console.log("got" + request);
-        urlStr = "http://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=Popeye";
-        console.log(urlStr);
+        urlStr = "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=" + request;
         $.ajax({
             type:"GET",
-            url: "https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=Popeye",
+            url: urlStr,
             dataType: "jsonp",
             success: function(response){
                 wikiArr = response;
-                console.log("made it!");
             },
             error: function(err){
                 console.log(err);
@@ -29,8 +26,8 @@ $(document).ready(function(){
     };
 
     $("#go").on("click", function(){
+        $(".results").html(" ");
         var q = $("#query").val();
-        console.log(q);
         req(q);
     })
     
