@@ -1,0 +1,37 @@
+.results{
+    display: none;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wiki-entry{
+    margin: 3px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-height: 80px;
+    background: white;
+}
+
+.wiki-entry:hover{
+    background-color: lightcyan;
+}
+
+.item-number{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    background: #535353;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    margin: 10px;
+}
+
+.subtitle{
+    font-size: 1.25rem;
+}

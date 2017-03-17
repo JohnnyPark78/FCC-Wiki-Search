@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FCC Wiki App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Search Wikipedia!<span class="subtitle"> (Or just go to a random page by clicking "Surprise me!")</span></h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="query" placeholder="What are you looking for?">
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary">Search the Wiki!!</button>
+            <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-primary btn-lg" role="button">Surprise me!</a>
+        </form>
+        <div class="results"></div>
+    </div>
+</body>
